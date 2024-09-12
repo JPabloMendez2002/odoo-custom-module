@@ -1,0 +1,37 @@
+<odoo>
+    <record id="view_event_form" model="ir.ui.view">
+        <field name="name">event.form</field>
+        <field name="model">event.management</field>
+        <field name="arch" type="xml">
+            <form string="Event">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="date"/>
+                        <field name="description"/>
+                        <field name="capacity"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_event_tree" model="ir.ui.view">
+        <field name="name">event.tree</field>
+        <field name="model">event.management</field>
+        <field name="arch" type="xml">
+            <tree string="Event">
+                <field name="id"/>
+                <field name="name"/>
+                <field name="date"/>
+                <field name="capacity"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_events" model="ir.actions.act_window">
+        <field name="name">Events</field>
+        <field name="res_model">event.management</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

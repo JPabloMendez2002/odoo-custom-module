@@ -1,0 +1,38 @@
+
+<odoo>
+    <record id="view_space_form" model="ir.ui.view">
+        <field name="name">space.form</field>
+        <field name="model">space.management</field>
+        <field name="arch" type="xml">
+            <form string="Space">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="location"/>
+                        <field name="capacity"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_space_tree" model="ir.ui.view">
+        <field name="name">space.tree</field>
+         <field name="model">space.management</field>
+        <field name="arch" type="xml">
+            <tree string="Space">
+                <field name="id"/>
+                <field name="name"/>
+                <field name="location"/>
+                <field name="capacity"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_spaces" model="ir.actions.act_window">
+        <field name="name">Space</field>
+        <field name="res_model">space.management</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,9 @@
+
+<odoo>
+    <!-- Main Menu and Submenus -->
+    <menuitem id="menu_custom_root" name="Event Management" sequence="10" web_icon="my_custom_module,static/description/icon.png" />
+    <menuitem id="menu_events" name="Events" parent="menu_custom_root" action="action_events" sequence="10"/>
+    <menuitem id="menu_attendees" name="Attendees" parent="menu_custom_root" action="action_attendees" sequence="20"/>
+    <menuitem id="menu_spaces" name="Spaces" parent="menu_custom_root" action="action_spaces" sequence="30"/>
+    <menuitem id="menu_bookings" name="Bookings" parent="menu_custom_root" action="action_bookings" sequence="40"/>
+</odoo>

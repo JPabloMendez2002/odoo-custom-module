@@ -1,0 +1,25 @@
+{
+    'name': 'Event Management Module',
+    'author': "José Pablo Méndez Poveda",
+    'website': "https://github.com/JPabloMendez2002",
+    'summary': """A module to manage events, attendees, spaces, and bookings.""",
+    'description': """This module provides functionality to manage events, including tracking attendees, 
+        managing spaces for events, and handling bookings. The module includes four main categories:
+        Events, Attendees, Spaces, and Bookings, allowing comprehensive management of event-related logistics.""",
+    'depends': ['base'],
+    'data': [
+        'security/ir.model.access.csv',
+        'views/events_views.xml',
+        'views/attendees_views.xml',
+        'views/spaces_views.xml',
+        'views/bookings_views.xml',
+        'views/menu_views.xml',
+    ],
+    'images': ['static/description/icon.png'],
+    'category': 'Custom',
+    'version': '1.0',
+    'license': 'LGPL-3', 
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+}

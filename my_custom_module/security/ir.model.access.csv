@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_space_management_user,access.space.managment.user,model_spaces_management,base.group_user,1,1,1,1
+access_event_management_user,access.event.managment.user,model_events_management,base.group_user,1,1,1,1
+access_booking_management_user,access.booking.managment.user,model_bookings_management,base.group_user,1,1,1,1
+access_attendee_management_user,access.attendee.managment.user,model_attendees_management,base.group_user,1,1,1,1
